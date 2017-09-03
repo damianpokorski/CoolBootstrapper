@@ -1,0 +1,30 @@
+html {}
+
+body {
+    height: 100%;
+    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: url('../img/backgrounds/bg-blackandwhite.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.layer,
+.interactiveLayer {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    pointer-events: disabled;
+}
+
+.interactiveLayer {
+    pointer-events: all;
+    height: auto;
+    min-height: 100%;
+    overflow-x: scroll;
+}

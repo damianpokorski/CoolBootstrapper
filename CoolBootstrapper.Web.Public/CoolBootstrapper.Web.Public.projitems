@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>ce9bac1d-658a-4717-8b82-98f1abd6d233</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CoolBootstrapper.Web.Public</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Public\*">
+      <BuildAction>None</BuildAction>
+      <CopyToOutputDirectory>CopyAlways</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Public\**\*">
+      <BuildAction>None</BuildAction>
+      <CopyToOutputDirectory>CopyAlways</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
