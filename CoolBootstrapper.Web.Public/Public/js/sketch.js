@@ -59,13 +59,12 @@ function setup() {
     // Create area
     createCanvas(windowWidth, windowHeight).parent($("#p5Layer")[0]);
     createPoints();
-    console.log(colorMode())
 }
 
 // Draw loop
 function draw() {
     clear();
-    background(64, 64, 255, 64 + sin(frameCount / 50) * 32);
+    background(64, 64, 255, 128 + sin(frameCount / 50) * 32);
     updatePoints();
     connectPoints();
 }

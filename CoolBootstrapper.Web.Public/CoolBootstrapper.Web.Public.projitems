@@ -9,13 +9,28 @@
     <Import_RootNamespace>CoolBootstrapper.Web.Public</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)Public\*">
-      <BuildAction>None</BuildAction>
-      <CopyToOutputDirectory>CopyAlways</CopyToOutputDirectory>
-    </Content>
-    <Content Include="$(MSBuildThisFileDirectory)Public\**\*">
-      <BuildAction>None</BuildAction>
-      <CopyToOutputDirectory>CopyAlways</CopyToOutputDirectory>
-    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Public\css\lib\animate.css" />
+    <Content Include="$(MSBuildThisFileDirectory)Public\css\lib\bootstrap.css" />
+    <Content Include="$(MSBuildThisFileDirectory)Public\css\lib\font-awesome.css" />
+    <Content Include="$(MSBuildThisFileDirectory)Public\css\lib\tether.css" />
+    <Content Include="$(MSBuildThisFileDirectory)Public\css\style.css" />
+    <Content Include="$(MSBuildThisFileDirectory)Public\fonts\fontawesome-webfont.eot" />
+    <Content Include="$(MSBuildThisFileDirectory)Public\fonts\fontawesome-webfont.ttf" />
+    <Content Include="$(MSBuildThisFileDirectory)Public\fonts\fontawesome-webfont.woff" />
+    <Content Include="$(MSBuildThisFileDirectory)Public\fonts\FontAwesome.otf" />
+    <Content Include="$(MSBuildThisFileDirectory)Public\html\index.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Public\img\backgrounds\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Public\fonts\fontawesome-webfont.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Public\fonts\fontawesome-webfont.woff2" />
+    <None Include="$(MSBuildThisFileDirectory)Public\js\lib\bootstrap.js" />
+    <None Include="$(MSBuildThisFileDirectory)Public\js\lib\jquery.js" />
+    <None Include="$(MSBuildThisFileDirectory)Public\js\lib\p5.dom.js" />
+    <None Include="$(MSBuildThisFileDirectory)Public\js\lib\p5.js" />
+    <None Include="$(MSBuildThisFileDirectory)Public\js\lib\tether.js" />
+    <None Include="$(MSBuildThisFileDirectory)Public\js\lib\vue.js" />
+    <None Include="$(MSBuildThisFileDirectory)Public\js\scripts.js" />
+    <None Include="$(MSBuildThisFileDirectory)Public\js\sketch.js" />
   </ItemGroup>
 </Project>

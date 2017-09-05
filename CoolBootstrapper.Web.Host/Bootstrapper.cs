@@ -10,7 +10,7 @@ namespace Nancy.CSharp.SelfHostWithRazor
         {
             base.ConfigureConventions(conventions);
             conventions.StaticContentsConventions.Add(
-                StaticContentConventionBuilder.AddDirectory("public","public")
+                StaticContentConventionBuilder.AddDirectory("/","public")
             );
         }
     }

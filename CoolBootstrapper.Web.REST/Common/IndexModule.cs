@@ -6,9 +6,9 @@ namespace CoolBoostrapper.Web.Modules.Common
     {
         public IndexModule()
         {
-            Get["/public"] = parameters =>
+            Get["/"] = parameters =>
             {
-                return Response.AsRedirect("public/index.html");
+                return Response.AsFile("public/html/index.html", "text/html");
             };
         }
     }

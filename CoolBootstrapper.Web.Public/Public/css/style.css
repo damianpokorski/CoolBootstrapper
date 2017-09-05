@@ -1,11 +1,8 @@
-html {}
-
 body {
     height: 100%;
     overflow: auto;
     overflow-y: scroll;
     overflow-x: hidden;
-    background: url('../img/backgrounds/bg-blackandwhite.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -17,9 +14,9 @@ body {
     position: fixed;
     height: 100%;
     width: 100%;
-    top: 0px;
-    left: 0px;
-    pointer-events: disabled;
+    top: 0;
+    left: 0;
+    pointer-events: none;
 }
 
 .interactiveLayer {
