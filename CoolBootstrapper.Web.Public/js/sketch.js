@@ -64,7 +64,7 @@ function setup() {
 // Draw loop
 function draw() {
     clear();
-    background(64, 64, 255, 128 + sin(frameCount / 50) * 32);
+    background(0, 144, 255, 192 + sin(frameCount / 50) * 32);
     updatePoints();
     connectPoints();
 }

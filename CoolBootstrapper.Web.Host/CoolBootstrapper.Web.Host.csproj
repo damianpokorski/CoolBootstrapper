@@ -112,7 +112,7 @@
   <Import Project="..\CoolBootstrapper.Web.Public\CoolBootstrapper.Web.Public.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(SolutionDir)CoolBootstrapper.Web.Public\Public\*" "$(TargetDir)\public" /e /i /f /y
+    <PostBuildEvent>xcopy "$(SolutionDir)CoolBootstrapper.Web.Public\*" "$(TargetDir)\public" /e /i /f /y
 
 if $(ConfigurationName) == Debug (
 xcopy /s /y /R "$(SolutionDir)packages\Nancy.Viewengines.Razor.1.4.3\BuildProviders\Nancy.ViewEngines.Razor.BuildProviders.dll" "$(ProjectDir)bin\"

@@ -8,7 +8,7 @@ namespace CoolBoostrapper.Web.Modules.Common
         {
             Get["/"] = parameters =>
             {
-                return Response.AsFile("public/html/index.html", "text/html");
+                return Response.AsFile("public/index.html", "text/html");
             };
         }
     }
