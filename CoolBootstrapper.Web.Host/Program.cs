@@ -10,9 +10,14 @@ namespace Nancy.CSharp.SelfHostWithRazor
             StaticConfiguration.EnableRequestTracing = true;
             var HostURL = "http://localhost:3579";
             var uri = new Uri(HostURL);
+
+            // Disable caching
+            StaticConfiguration.Caching.EnableRuntimeViewDiscovery = true;
+            StaticConfiguration.Caching.EnableRuntimeViewUpdates = true;
+
             using (var host = new NancyHost(uri))
             {
-                System.Diagnostics.Process.Start(HostURL);
+                //System.Diagnostics.Process.Start(HostURL);
                 host.Start();
 
                 Console.WriteLine("Your application is running on " + uri);

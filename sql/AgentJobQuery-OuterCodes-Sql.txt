@@ -1,0 +1,3 @@
+EXEC  master..xp_cmdshell 'mkdir C:\temp'
+EXEC  master..xp_cmdshell 'del C:\temp\productcodes.csv'
+EXEC  master..xp_cmdshell 'bcp "select ProductCode,Barcode FROM VoiceManDB_test.dbo.ProductOuterBarcodes" queryout "C:\temp\productcodes.csv" -c -t"," -r"\n" -S "localhost" -T'

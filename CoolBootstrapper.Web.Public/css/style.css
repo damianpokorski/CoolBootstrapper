@@ -25,3 +25,7 @@ body {
     min-height: 100%;
     overflow-x: scroll;
 }
+
+#p5Layer{
+    z-index:-10;
+}

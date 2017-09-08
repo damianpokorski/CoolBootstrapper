@@ -9,7 +9,7 @@
     <meta name="author" content="metatags generator">
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="7 days">
-    <title>Website Title</title>
+    <title>VoiceMan DA - Dashboard</title>
 
     <!-- Libraries -->
 
@@ -21,16 +21,26 @@
     <script language="javascript" type="text/javascript" src="/js/lib/tether.js"></script>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="/css/lib/bootstrap.css">
-    <script language="javascript" type="text/javascript" src="/js/lib/bootstrap.js"></script>
+    <!--<link rel="stylesheet" href="/css/lib/bootstrap.css">
+    <script language="javascript" type="text/javascript" src="/js/lib/bootstrap.js"></script>-->
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- p5 Rendering library -->
     <script language="javascript" type="text/javascript" src="/js/lib/p5.js"></script>
     <script language="javascript" type="text/javascript" src="/js/lib/p5.dom.js"></script>
 
-    <!-- Vue.js -->
+    <!-- Vue.js - Libraries -->
+    <link rel="stylesheet" href="/css/lib/vue-transitions.css">
     <script language="javascript" type="text/javascript" src="/js/lib/vue.js"></script>
     <script language="javascript" type="text/javascript" src="/js/lib/vue-router.js"></script>
+    <!-- Vue.js - Loading *.vue files dynamically -->
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <!-- Vue.js - Route Handling -->
+    <script language="javascript" type="text/javascript" src="/js/route-handler.js"></script>
 
     <!-- Animate.css ... it's great. -->
     <link rel="stylesheet" href="/css/lib/animate.css">
@@ -54,19 +64,28 @@
 
 <body>
 
-    <!-- BG Filler -->
-    <div class="layer darkFilter" style="background:rgba(0,0,0,0.0)"></div>
-
     <!-- P5 - Fancy Background -->
     <div class="layer" id="p5Layer"></div>
 
 
     <!-- Main Container -->
-    <div class="" id="mainContent">
+    <div class="container" id="mainContainer">
+        <!-- Navbar -->
+        <nav>
+            <div class="nav-wrapper light-blue accent-4">
+                <a href="#" class="brand-logo">&nbsp;&nbsp;VoiceMan DA Dashboard</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a><router-link to="/foo">Go to Foo</router-link></a></li>
+                    <li><a><router-link to="/bar">Go to Bar</router-link></a></li>
+                    <li><a><router-link to="/test">Go to Test</router-link></a></li>
+                </ul>
+            </div>
+        </nav>
 
-        <div class="container-fluid">
-            
-        </div>
+        <!-- Route Content -->
+        <transition name="bounceInUp">
+            <router-view></router-view>
+        </transition>
     </div>
 
 </body>

@@ -13,6 +13,7 @@
     <Content Include="$(MSBuildThisFileDirectory)css\lib\bootstrap.css" />
     <Content Include="$(MSBuildThisFileDirectory)css\lib\font-awesome.css" />
     <Content Include="$(MSBuildThisFileDirectory)css\lib\tether.css" />
+    <Content Include="$(MSBuildThisFileDirectory)css\lib\vue-transitions.css" />
     <Content Include="$(MSBuildThisFileDirectory)css\style.css" />
     <Content Include="$(MSBuildThisFileDirectory)fonts\fontawesome-webfont.eot" />
     <Content Include="$(MSBuildThisFileDirectory)fonts\fontawesome-webfont.ttf" />
@@ -31,7 +32,13 @@
     <None Include="$(MSBuildThisFileDirectory)js\lib\tether.js" />
     <None Include="$(MSBuildThisFileDirectory)js\lib\vue-router.js" />
     <None Include="$(MSBuildThisFileDirectory)js\lib\vue.js" />
+    <None Include="$(MSBuildThisFileDirectory)js\route-handler.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="$(MSBuildThisFileDirectory)js\scripts.js" />
     <None Include="$(MSBuildThisFileDirectory)js\sketch.js" />
+    <None Include="$(MSBuildThisFileDirectory)vues\test.vue">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
